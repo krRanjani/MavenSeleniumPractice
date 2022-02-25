@@ -10,7 +10,7 @@ import org.testng.annotations.*;
 
 public class GoogleTest {
 	
-	WebDriver driver;
+	 static WebDriver driver;
 	String URL = "http://www.google.com";
 	
 	@BeforeMethod()
