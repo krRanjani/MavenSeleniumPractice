@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testing.GoogleTest">
+      <class name="com.testing.HardSoftAssertions">
         <methods>
-          <include name="setUp"/>
-          <include name="googleLogoVerify"/>
-          <include name="closeBrowser"/>
+          <include name="set1"/>
+          <include name="set"/>
         </methods>
-      </class> <!-- com.testing.GoogleTest -->
+      </class> <!-- com.testing.HardSoftAssertions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

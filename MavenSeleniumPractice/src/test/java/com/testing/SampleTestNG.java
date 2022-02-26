@@ -1,7 +1,7 @@
 package com.testing;
 
 import org.testng.annotations.*;
-
+//priority and description
 public class SampleTestNG {
 	
 	@Test (priority=1,description = "First method running")
