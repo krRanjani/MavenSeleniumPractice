@@ -1,37 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Suite1">                        <!-- <suite parallel="classes" name="Suite1"> -->
-	<test thread-count="5" name="IeTestcases">     <!-- <test thread-count="5" parallel="classes" name="Test1"> -->
-
-		<parameter name="browser" value="Ie" />
-		<classes>
-			<!--<class name="com.testing.SampleTest1" /> -->
-			<!--<class name="com.testing.SampleTestNG" /> -->
-			<!--<class name="com.testing.SampleTestAnnotations" /> -->
-			<!--<class name="com.testing.TestNGfeatures" /> -->
-			<class name="com.testing.Crossbrowser" />
-			<!--<class name="com.testing.SampleTest2" /> -->
-			<!--<class name="com.testing.GoogleTest"/ > -->
-
-		</classes>
-	</test> <!-- Test1 -->
-	<test thread-count="5" name="FFTestcases">
-
-		<parameter name="browser" value="firefox" />
-		<classes>
-
-			<class name="com.testing.Crossbrowser" />
-
-		</classes>
-	</test> <!-- Test1 -->
-	<test thread-count="5" name="ChromeTestcases">
-
-		<parameter name="browser" value="chrome" />
-		<classes>
-
-			<class name="com.testing.Crossbrowser" />
-
-
-		</classes>
-	</test> <!-- Test1 -->
-</suite> <!-- Suite1 -->
+<suite  parallel= "none" name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"></parameter>
+  <classes>
+  <class name= "com.testing.SampleExtentReport" />
+   <!-- <class name= "com.testing.GoogleTest" />
+    <class name= "com.testing.HardSoftAssertions" />
+    <class name= "com.testing.CrossBrowser" />
+    <class name= "com.testing.SampleTest1" />
+    <class name= "com.testing.SampleTestAnnotations" />
+    <class name= "com.testing.SampleTestNG"> 
+    <methods>
+    <exclude name="third"></exclude>
+    </class>
+    </methods>
+    <class name= "com.testing.SampleTestNGfeatures">
+    <methods>
+    <include name ="loginTest"></include>
+    </methods>
+    </class> -->
+    
+  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

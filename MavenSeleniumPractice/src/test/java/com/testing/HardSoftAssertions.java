@@ -20,7 +20,7 @@ public class HardSoftAssertions {
 		//SOFT ASSERTION
 		SoftAssert sa = new SoftAssert();
 		System.out.println("This is the third class");
-		sa.assertEquals(false, true); //Lines after this will be executed even if it fails as this is soft assertion
+		sa.assertEquals(false, false); //Lines after this will be executed even if it fails as this is soft assertion
 		System.out.println("Soft assertion");
 		sa.assertAll("One assertion failed"); //If assertAll is not used then set1 will be marked PASS even if the assertion is FAILED
 
@@ -32,7 +32,7 @@ public class HardSoftAssertions {
 	{
 		SoftAssert sa = new SoftAssert();
 		System.out.println("This is the forth class");
-		sa.assertEquals(false, false); //Lines after this will be executed even if it fails as this is soft assertion
+		sa.assertEquals(true, true); //Lines after this will be executed even if it fails as this is soft assertion
 		System.out.println("Soft assertion1");
 		sa.assertAll("One assertion failed"); //If assertAll is not used then set1 will be marked PASS even if the assertion is FAILED
 
