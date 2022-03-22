@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-04T15:56:05 EST" name="Default suite" finished-at="2022-03-04T15:56:05 EST" duration-ms="120">
+  <suite started-at="2022-03-04T22:56:16 EST" name="Default suite" finished-at="2022-03-04T22:56:24 EST" duration-ms="8686">
     <groups>
     </groups>
-    <test started-at="2022-03-04T15:56:05 EST" name="Default test" finished-at="2022-03-04T15:56:05 EST" duration-ms="120">
-      <class name="com.testing.HardSoftAssertions">
-        <test-method signature="set()[pri:0, instance:com.testing.HardSoftAssertions@35aea049]" started-at="2022-03-04T15:56:05 EST" name="set" finished-at="2022-03-04T15:56:05 EST" duration-ms="26" status="PASS">
+    <test started-at="2022-03-04T22:56:16 EST" name="Default test" finished-at="2022-03-04T22:56:24 EST" duration-ms="8686">
+      <class name="com.selenium.WindowHandles">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.selenium.WindowHandles@2c1b194a]" started-at="2022-03-04T22:56:16 EST" name="launchBrowser" finished-at="2022-03-04T22:56:23 EST" duration-ms="7062" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- set -->
-        <test-method signature="set1()[pri:0, instance:com.testing.HardSoftAssertions@35aea049]" started-at="2022-03-04T15:56:05 EST" name="set1" finished-at="2022-03-04T15:56:05 EST" depends-on-methods="com.testing.HardSoftAssertions.set" duration-ms="7" status="PASS">
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="wHandleNewWindow()[pri:0, instance:com.selenium.WindowHandles@2c1b194a]" started-at="2022-03-04T22:56:23 EST" name="wHandleNewWindow" finished-at="2022-03-04T22:56:23 EST" duration-ms="566" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- set1 -->
-      </class> <!-- com.testing.HardSoftAssertions -->
+        </test-method> <!-- wHandleNewWindow -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.selenium.WindowHandles@2c1b194a]" started-at="2022-03-04T22:56:23 EST" name="closeBrowser" finished-at="2022-03-04T22:56:24 EST" duration-ms="982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.selenium.WindowHandles -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

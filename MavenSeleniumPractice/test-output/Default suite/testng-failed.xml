@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testing.HardSoftAssertions">
+      <class name="com.selenium.WindowHandles">
         <methods>
-          <include name="set1"/>
-          <include name="set"/>
+          <include name="wHandleNewWindowMessage"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.testing.HardSoftAssertions -->
+      </class> <!-- com.selenium.WindowHandles -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
